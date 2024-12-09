@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Task 1: Destructure a, b, and c with default values 10, 20, and 30
+// respectively. Write the destructuring assignment.
+// Input : const obj = { a: 1, b: undefined, c: null };
+// ***********Solution*************
+// const obj = { a: 1, b: undefined, c: null }
+// let {a,b,c} = obj
+//   a=10
+//   b=20
+//   c=30
+//   console.log(a,b,c)
+
+///////////////////////////////////////////////////////
+// Task 2: Given the object const obj = { a: { b: { c: 1 } }, d: 2 }; destructure to
+// extract c and d in one line.
+// **************Object Destructuring****************
+//***********Solution***************
+// const obj = { a: { b: { c: 1 } }, d: 2 };
+// const {a:{b:{c}},d} = obj
+// console.log(c,d)
+
+//////////////////////////////////////////////////////
+// Task 3: Write a function “sum” that takes an object with properties a, b, and
+// c as a parameter and returns their sum. Use destructuring in the function
+// parameter.
+//*****************Solution**********************
+// const obj = {a:1,b:2,c:3}
+// function sum(obj){
+//  const {a,b,c} = obj
+//  let sum = a+b+c;
+//  return sum
+// }
+// let total = sum({a:1,b:2,c:3})
+// console.log(total)
+
+//////////////////////////////////////////////////////
+// Task 4: Use array destructuring to extract the first and third elements into
+// variables.
+// Input: const arr = [1, 2, 3, 4, 5];
+//*****************Array Destructure*****************
+//*********************Solution**************************
+// const arr = [1, 2, 3, 4, 5];
+// const [a,b,c,d,e] = arr
+// console.log(a,c)
+
+//////////////////////////////////////////////////////
+// Task 5: Given const key = "name" and const obj = { name: "John" }; use
+// destructuring to extract the value of name using the key variable.
+//******************Solution*****************************
+// let key = "name"
+// const obj = { name: "John" };
+// let {name} = obj
+// key = name
+// console.log(key)
+
+//////////////////////////////////////////////////////////
+// Task 9: Create a function that takes two arrays and insert the second array
+// in the middle of the first array using spread operator.
+// Examples
+// tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]) ➞ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// tuckIn([15,150], [45, 75, 35]) ➞ [15, 45, 75, 35, 150]
+// *****************Solution***************************
+//  function tuckIn(arr1,arr2){
+//     let length = arr1.length/2
+//     arr1.splice(length,0,...arr2)
+//    return arr1
+//  }
+//  let merge_arr = tuckIn([1,3,9,8], [2, 4, 5, 6, 7, 10])
+//  console.log(merge_arr)
+//     </script>
+</body>
+</html>
